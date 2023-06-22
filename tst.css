@@ -1,0 +1,27 @@
+
+  
+    span.aside_span{
+      margin-bottom: 30px;
+      margin-top: 10px;
+    }
+    li{
+      height: 70px;
+      margin-left: -25px;
+      width: 270px;
+      box-sizing: border-box;
+  }
+  ul{
+    box-sizing: border-box;
+    list-style-type: none;
+    background: #f7f9f9;
+    display: grid;
+    margin-top: 10px;
+    border-radius: 15px;
+    width: 300px;
+    margin-left: 20px;    
+}
+    aside#main-body{
+      margin-top: 70px;
+      height: max-content;
+      background: rgb(180, 173, 173);
+  }

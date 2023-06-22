@@ -1,0 +1,899 @@
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+div#container {
+  background: white;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto;
+  margin-top: -9px;
+}
+div#container nav#nav {
+  grid-column-start: 1;
+  width: 317px;
+  height: 99vh;
+  display: grid;
+  justify-content: end;
+  overflow-y: auto;
+  border-right: solid 1px rgb(221, 217, 217);
+}
+div#container nav#nav div#nav_body {
+  width: 251px;
+  height: 101vh;
+  margin-right: 20px;
+  margin-top: -20px;
+}
+div#container ul#nav_list {
+  display: grid;
+  margin-left: 0;
+}
+div#container ul#nav_list li.list {
+  display: grid;
+}
+div#container ul#nav_list li.list span.nav {
+  margin-left: 20px;
+  font-size: 19px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+div#container ul#nav_list li.list span.firstnav {
+  font-weight: bold;
+}
+div#container li.list {
+  list-style-type: none;
+  height: 50px;
+  margin-left: -30px;
+}
+div#container li.list a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+}
+div#container div#foot_btn {
+  display: grid;
+  justify-content: center;
+}
+div#container div#foot_btn button#nav_foot {
+  background: rgb(47, 176, 219);
+  color: white;
+  width: 230px;
+  height: 50px;
+  border-radius: 31px;
+  border: solid 1px rgb(47, 176, 219);
+  margin-top: 0;
+  margin-left: -10px;
+}
+div#container div#foot_btn button#nav_foot span#btn_nav {
+  font-size: larger;
+  font-weight: bold;
+}
+div#container button#twt-pan-2 {
+  color: white;
+  background: rgb(47, 176, 219);
+  border-radius: 19px;
+  width: 70px;
+  height: 33px;
+  border: none;
+  margin-right: -33px;
+}
+div#container button#twt-pan-2 span {
+  font-weight: bold;
+}
+div#container div#nav_profile {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+div#container div#nav_profile span#nav_id {
+  grid-column-start: 1;
+  background: green;
+  color: white;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: large;
+  margin-left: -7px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+div#container div#nav_profile div#profile_name {
+  padding-left: 10px;
+  grid-column-start: 2;
+}
+div#container div#nav_profile div#profile_svg {
+  grid-column-start: 3;
+}
+div#container div#nav_profile span#profile-2 {
+  color: #536471;
+}
+div#container main#main {
+  grid-column-start: 2;
+  width: 1032px;
+  height: 99vh;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+div#container main#main div#main-1 {
+  grid-column-start: 1;
+  border-right: solid 1px rgb(221, 217, 217);
+}
+div#container main#main div#main-1 header#main-1 {
+  position: fixed;
+  width: 567px;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  background: white;
+  z-index: 3;
+  padding-left: 20px;
+  padding-right: 20px;
+  column-gap: 35vw;
+}
+div#container main#main div#main-1 header#main-1 span {
+  grid-column-start: 1;
+  justify-self: left;
+  font-size: 17px;
+  font-weight: bold;
+}
+div#container main#main div#main-1 header#main-1 div {
+  grid-column-start: 2;
+  justify-self: right;
+}
+div#container main#main div#main-1 div#main-body {
+  width: 598px;
+  height: auto;
+  transform: translateY(50px);
+}
+div#container main#main div#main-1 div#main-body div#tweet_panel {
+  padding-bottom: 10px;
+  border-bottom: solid 1px rgb(221, 217, 217);
+  width: 609px;
+}
+div#container main#main div#main-1 div#main-body div#panel_top {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 13px;
+}
+div#container main#main div#main-1 div#main-body div#panel_top span#twt_panel {
+  background: green;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+div#container main#main div#main-1 div#main-body div#panel_top form#twt {
+  width: 170px;
+  height: 30px;
+}
+div#container main#main div#main-1 div#main-body div#panel_top form#twt input {
+  margin-top: 7px;
+  margin-left: 5px;
+  border: none;
+  height: 30px;
+  font-size: 22px;
+  color: silver;
+}
+div#container main#main div#main-1 div#main-body div#panel_top div#twt_pan2_con {
+  display: flex !important;
+  justify-content: space-between;
+}
+div#container main#main aside#aside {
+  grid-column-start: 2;
+}
+
+div#twt_pan2_con {
+  display: flex;
+  width: 555px;
+  height: 48px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+div#twt-panal_svg {
+  margin-left: 60px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+div#twt-panal_svg div.svg-twt {
+  margin: 10px;
+}
+
+div#twtr1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 50px;
+}
+div#twtr1 span {
+  margin-left: 5px;
+  color: rgb(110, 105, 105);
+}
+div#twtr1 li {
+  color: #46a0e6;
+  margin-left: -15px;
+}
+
+div.twtr_twt div.twtr2 {
+  display: flex;
+  box-sizing: border-box;
+  width: 598px;
+  padding-top: 20px;
+}
+div.twtr_twt div.twtr2 div.twtr_dp {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+}
+div.twtr_twt div.twtr2 div.twtr_intel {
+  width: 44vw;
+}
+div.twtr_twt span.twtr {
+  margin-right: 7px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  display: flex;
+}
+div.twtr_twt span.twtr-in {
+  color: #536471;
+}
+div.twtr_twt li {
+  color: #536471;
+}
+div.twtr_twt div.twtr-insvg {
+  margin-right: 7px;
+}
+div.twtr_twt span.twtrin {
+  color: #536471;
+}
+
+.elonm {
+  width: max-content;
+}
+
+span#twtr {
+  font-weight: bold;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+
+span#twtr-in {
+  color: #536471;
+}
+
+div#twtr3 {
+  width: 504px;
+  height: 504px;
+  margin-left: 70px;
+  margin-top: 5px;
+  background: black;
+  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+div#twtr4 {
+  display: flex;
+  justify-content: space-between;
+  width: 506px;
+  height: 32px;
+  margin-left: 30px;
+}
+div#twtr4 ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+div#twtr4 ul span {
+  padding-left: 5px;
+  color: #536471;
+}
+div#twtr4 .lasttwt {
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+div.twtr_foot-svg span {
+  color: #536471;
+}
+
+img {
+  border-radius: 50%;
+}
+
+video {
+  border-radius: 10px;
+}
+
+span#check {
+  margin-left: 30px;
+}
+
+div.twtr-in1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+div.cover {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+ul.twtr-in {
+  margin-left: -10px;
+}
+
+div.twtr4 {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  width: 506px;
+  margin-left: 30px;
+}
+
+ul.foot-svg {
+  display: flex;
+  list-style-type: none;
+}
+
+div#container main#main header#main-2 {
+  position: fixed;
+  width: 360px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: white;
+  z-index: 3;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+div#container main#main header#main-2 button {
+  background: #f7f9f9;
+  margin-right: 0;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border: none;
+  height: 39px;
+  width: 45px;
+}
+div#container main#main header#main-2 input {
+  background: #f7f9f9;
+  margin-left: 0;
+  height: 37px;
+  width: 300px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border: none;
+  color: #536471;
+}
+
+div#container main#main aside#aside aside#main-body {
+  margin-top: 70px;
+  height: max-content;
+  background: white;
+}
+div#container main#main aside#aside aside#main-body ul.aside_ul {
+  list-style-type: none;
+  background: #f7f9f9;
+  display: grid;
+  margin-top: 10px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  width: 350px;
+  margin-left: 20px;
+}
+div#container main#main aside#aside aside#main-body ul.aside_ul span.aside_span {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+div#container main#main aside#aside aside#main-body ul.aside_ul li.aside_li {
+  box-sizing: border-box;
+  height: 70px;
+  margin-left: px;
+  width: 310px;
+  margin-left: -25px;
+}
+
+span.aside_span {
+  margin-left: -20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+div.aside_row1 {
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+}
+
+aside#main-body ul.aside_ul li.aside_li div.aside_row1 div.trend {
+  box-sizing: border-box;
+  display: flex;
+  width: 300px;
+  max-height: 27px;
+}
+aside#main-body ul.aside_ul li.aside_li div.aside_row1 div.trend span {
+  box-sizing: border-box;
+  width: fit-content;
+}
+aside#main-body ul.aside_ul li.aside_li div.aside_row1 div.trend ul {
+  max-height: max-content;
+  list-style-type: disc;
+  box-sizing: border-box;
+  width: fit-content;
+  width: 150px;
+}
+aside#main-body ul.aside_ul li.aside_li div.aside_row1 div.trend ul li {
+  max-height: 27px;
+  transform: translateX(-17px) translateY(4px);
+  width: 150px;
+  box-sizing: border-box;
+}
+
+li.aside_li {
+  margin-bottom: 20px;
+}
+
+div#container main#main aside#aside ul#aside_ul2 {
+  display: grid;
+  grid-template-rows: auto;
+  background: #f7f9f9;
+  width: 310px;
+  border-radius: 15px;
+  margin-left: 20px;
+  list-style-type: none;
+  grid-row-gap: 10px;
+}
+div#container main#main aside#aside ul#aside_ul2 li {
+  margin-left: -25px;
+}
+div#container main#main aside#aside ul#aside_ul2 li div.in_li2-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 330px;
+}
+div#container main#main aside#aside ul#aside_ul2 li div.in_li2-1 div.aside2-li {
+  display: flex;
+}
+
+a.aside_foot {
+  text-decoration: none;
+  color: #46a0e6;
+  padding-bottom: 10px;
+  font-size: 17px;
+  margin-left: -25px;
+}
+
+div.inner-aside2 {
+  margin-left: 7px;
+}
+
+div.innermost-aside2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.svg-innermost {
+  margin-left: 7px;
+}
+
+div.last-row {
+  display: flex;
+}
+
+button.aside2 {
+  color: white;
+  background: black;
+  border-radius: 15px;
+  width: 70px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+div.last-svg {
+  margin-left: 7px;
+}
+
+span.last-svg {
+  font-size: 15px;
+  margin-left: 5px;
+  color: silver;
+}
+
+span.aside_row1 {
+  font-size: 15px;
+  color: rgb(131, 125, 125);
+  padding-top: 5px;
+}
+
+span.aside_row2 {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+span.aside_row3 {
+  color: rgb(131, 125, 125);
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 1024px) {
+  div#container nav#nav {
+    width: 19vw;
+  }
+  div#container nav#nav div#nav_body {
+    width: 20vw;
+  }
+  div#container ul#nav_list li.list span.nav {
+    margin-left: 20px;
+    font-size: 17px;
+  }
+  div#container li.list {
+    margin-left: -10px;
+  }
+  div#container div#foot_btn button#nav_foot {
+    width: 170px;
+    margin-left: 29px;
+  }
+  div#container div#nav_profile {
+    margin-left: 40px;
+  }
+  div#container main#main {
+    width: 775px;
+  }
+  div#container main#main div#main-1 {
+    width: 525px;
+  }
+  div#container main#main div#main-1 header#main-1 {
+    width: 485px;
+  }
+  div#container main#main div#main-1 div#main-body div#tweet_panel {
+    width: 525px;
+  }
+  div#twt_pan2_con {
+    width: 480px;
+    height: 48px;
+  }
+  div.container div#main-body div.twtr_twt div.twtr2 {
+    width: 500px;
+  }
+  div.container div#main-body div.twtr_twt div.twtr2 div.menk1 {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    transform: translateY(-30px);
+  }
+  div.container div#main-body div.twtr_twt div.twtr2 div.twtr_intel {
+    width: 42vw;
+  }
+  div#twtr3 {
+    width: 440px;
+    height: 440px;
+  }
+  div.twtr2 {
+    width: 500px;
+  }
+  div.twtr4 {
+    width: 490px;
+  }
+  div#container main#main header#main-2 input {
+    width: 180px;
+  }
+  div#container main#main aside#aside aside#main-body ul.aside_ul {
+    width: 230px;
+  }
+  div#container main#main aside#aside aside#main-body ul.aside_ul ul.aside_ul li.aside_li {
+    width: 200px;
+  }
+  div.aside_row1 {
+    width: 180px;
+  }
+  div#container main#main aside#aside ul#aside_ul2 {
+    width: 190px;
+  }
+  div#container main#main aside#aside ul#aside_ul2 li div.in_li2-1 {
+    width: 230px;
+  }
+  button.aside2 {
+    width: 60px;
+    margin-right: 15px;
+  }
+  li.xside {
+    display: none !important;
+  }
+  .elon-svg {
+    margin-left: 13vw;
+  }
+  .elonm {
+    width: max-content;
+  }
+  div.twtr_twt div.menk1 {
+    margin-top: -50px !important;
+  }
+}
+@media only screen and (max-width: 790px) {
+  div#container nav#nav {
+    display: none;
+  }
+  div#container main#main {
+    width: 770px;
+  }
+  div#container main#main div#main-1 {
+    width: 500px;
+  }
+  div#container main#main div#main-1 header#main-1 {
+    width: 460px;
+  }
+  div#container main#main div#main-1 div#main-body {
+    width: 520px;
+  }
+  div#container main#main div#main-1 div#main-body div.twtr_twt div.twtr2 {
+    width: 510px;
+  }
+  div#container main#main div#main-1 div#main-body div.twtr_twt div.twtr2 div.menk1 {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    transform: translateY(-30px);
+  }
+  div#container main#main div#main-1 div#main-body div.twtr_twt div.twtr2 div.twtr_intel {
+    width: 50vw;
+  }
+  div#container main#main div#main-1 div#main-body div#tweet_panel {
+    width: 500px;
+  }
+  div#twt_pan2_con {
+    width: 460px;
+  }
+  div#twtr3 {
+    width: 410px;
+    height: 410px;
+  }
+  div#container main#main header#main-2 input {
+    width: 180px;
+  }
+  div#container main#main aside#aside aside#main-body ul.aside_ul {
+    width: 230px;
+  }
+  div#container main#main aside#aside aside#main-body ul.aside_ul ul.aside_ul li.aside_li {
+    width: 200px;
+  }
+  div.aside_row1 {
+    width: 180px;
+  }
+  div#container main#main aside#aside ul#aside_ul2 {
+    width: 190px;
+  }
+  div#container main#main aside#aside ul#aside_ul2 li div.in_li2-1 {
+    width: 230px;
+  }
+  button.aside2 {
+    width: 60px;
+    margin-right: 15px;
+  }
+  div.twtr4 {
+    width: 410px;
+  }
+  div#twtr4 {
+    width: 410px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  div#container nav#nav {
+    display: flex;
+    width: 100vw;
+    transform: translateY(500px);
+    position: fixed;
+    z-index: 3;
+    background: #f7f9f9;
+  }
+  div#container nav#nav div#nav_body {
+    width: 20vw;
+  }
+  div#container nav#nav div#nav_body ul {
+    display: flex;
+    margin-left: -190px;
+    justify-content: space-between;
+  }
+  div#container nav#nav div#nav_body ul li {
+    margin-left: -170px;
+  }
+  div#container nav#nav div#nav_body ul li span {
+    display: none;
+  }
+  div#container ul#nav_list li.list span.nav {
+    margin-left: 20px;
+    font-size: 17px;
+  }
+  div#container li.list {
+    margin-left: -10px;
+  }
+  div#container div#foot_btn button#nav_foot {
+    width: 170px;
+    margin-left: 29px;
+  }
+  div#container div#nav_profile {
+    margin-left: 40px;
+  }
+  div#container main#main div#main-1 {
+    width: 99vw;
+  }
+  div#container main#main div#main-1 header#main-1 {
+    width: 90vw;
+    height: 50px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    background: white;
+    z-index: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 75vw;
+  }
+  div#container main#main div#main-1 header#main-1 span {
+    display: hidden;
+    grid-column-start: 1;
+    justify-self: left;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  div#container main#main div#main-1 header#main-1 div {
+    grid-column-start: 2;
+    justify-self: right;
+  }
+  div#container main#main div#main-1 div#main-body div#tweet_panel {
+    display: none;
+  }
+  div#twt_pan2_con {
+    width: 510px;
+    height: 48px;
+  }
+  div#twtr3 {
+    width: 95vw;
+    height: 419px;
+    margin-left: 0px;
+    margin-top: 5px;
+    background: black;
+    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  div#twtr4 div.twtr_foot-svg {
+    width: 95vw;
+  }
+  div#twtr4 div.twtr_foot-svg ul {
+    margin-left: -30px;
+  }
+  div#twtr4 div.twtr_foot-svg ul li {
+    margin-left: 0px;
+  }
+  div.twtr2 {
+    width: 530px;
+  }
+  div#container main#main header#main-2 input {
+    width: 180px;
+  }
+  div#container main#main aside#aside aside#main-body ul.aside_ul {
+    width: 230px;
+  }
+  div#container main#main aside#aside aside#main-body ul.aside_ul ul.aside_ul li.aside_li {
+    width: 200px;
+  }
+  div.aside_row1 {
+    width: 180px;
+  }
+  div#container main#main aside#aside ul#aside_ul2 {
+    width: 190px;
+  }
+  div#container main#main aside#aside ul#aside_ul2 li div.in_li2-1 {
+    width: 230px;
+  }
+  button.aside2 {
+    width: 60px;
+    margin-right: 15px;
+  }
+  div.lasttwt {
+    margin-right: 30px;
+    margin-top: 3px;
+  }
+  div.twtr_twt {
+    width: 100vw !important;
+  }
+  div.twtr2 {
+    width: 100vw !important;
+    margin: 0px;
+  }
+  div.twtr-in2 {
+    width: 80vw;
+    margin-left: 0px;
+  }
+  div.twtr-in2 span.twtrin {
+    margin-left: 0px;
+  }
+  div.twtr_intel {
+    width: 80vw;
+  }
+  div.twtr4 {
+    width: 95vw;
+  }
+}
+@media only screen and (max-width: 376px) {
+  div#container nav#nav div#nav_body {
+    width: 20vw;
+  }
+  div#container nav#nav div#nav_body ul {
+    display: flex;
+    margin-left: -190px;
+    justify-content: space-between;
+  }
+  div#container nav#nav div#nav_body ul li {
+    margin-left: -130px;
+  }
+  div#container nav#nav div#nav_body ul li span {
+    display: none;
+  }
+  div.twtr4 {
+    width: 95vw;
+  }
+  .elon-svg {
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 321px) {
+  div#container nav#nav div#nav_body {
+    width: 20vw;
+  }
+  div#container nav#nav div#nav_body ul {
+    display: flex;
+    margin-left: -190px;
+    justify-content: space-between;
+  }
+  div#container nav#nav div#nav_body ul li {
+    margin-left: -80px;
+  }
+  div.twtr4 {
+    width: 85vw;
+    margin-left: -20px;
+  }
+  div#twtr4 {
+    width: 85vw;
+  }
+  .elon-svg {
+    margin-left: 0;
+  }
+  .elonm {
+    width: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
