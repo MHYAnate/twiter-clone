@@ -712,7 +712,9 @@ span.aside_row3 {
   div.container nav#nav {
     display: flex;
     width: 100vw;
-    transform: translateY(87vh);
+    height: 10vh;
+    margin-bottom: 3vh;
+    transform: translateY(91vh);
     position: fixed;
     z-index: 3;
     background: #f7f9f9;
