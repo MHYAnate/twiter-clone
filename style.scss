@@ -529,8 +529,10 @@ span.aside_row3 {
 	color: rgb(131, 125, 125);
 	font-size: 13px;
 }
-@media only screen and (max-width: 2024px) {
-	
+@media only screen and (min-width: 420px) {
+	div#nav_body {
+		width: 20vw;
+	}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -539,9 +541,7 @@ span.aside_row3 {
 		width: 19vw;
 	
 	}
-	div#nav_body {
-		width: 20vw;
-	}
+
 
 
 	span.nav {
@@ -735,16 +735,12 @@ button.aside2 {
 			width: 410px;
 		}
 }
-@media only screen and (max-width: 426px){
+@media only screen and (max-width: 419px){
   div#container {
 		width: 100vw;
 		margin-left: 0px;
 		nav#nav {
-      width: 100vw !important;
-      transform: translateY(500px);
-      position: fixed;
-      z-index: 3;
-      background: #f7f9f9;
+   display: none;
 			div#nav_body {
 				width: 100vw;
         ul{
@@ -904,7 +900,9 @@ div.twtr4{
 		width: 100vw;
 			margin-left: 1px;
 		nav#nav {
+			display: none;
       width: 100vw;
+			justify-content: center;
 			div#nav_body {
 				width: 100vw;
         ul{
@@ -936,6 +934,8 @@ div.twtr4{
 		 }
 		 nav#nav {
 			width: 100vw;
+			justify-content: center;
+			display: none;
 			
 		}
 		div#nav_body {
@@ -944,16 +944,15 @@ div.twtr4{
 		}
 		ul{
 			display: flex;
-			margin-left: -190px;
+			
 			justify-content: space-between;
 			li{
-				margin-left: -80px;
+			
 				
 			}
 		}
 		 div.twtr4{
 			width: 85vw;
-			margin-left: -20px;
 		}
 		div#twtr4{
 			width: 85vw;
