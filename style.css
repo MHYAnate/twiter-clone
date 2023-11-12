@@ -716,7 +716,7 @@ span.aside_row3 {
     padding-bottom: 3vh;
     transform: translateY(90vh);
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     background: #f7f9f9;
   }
   div.container nav#nav div#nav_body {
