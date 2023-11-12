@@ -712,7 +712,7 @@ span.aside_row3 {
   div.container nav#nav {
     display: flex;
     width: 100vw;
-    transform: translateY(87vh);
+    transform: translateY(85vh);
     position: fixed;
     z-index: 3;
     background: #f7f9f9;
@@ -789,6 +789,12 @@ span.aside_row3 {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
+  #twt-pan-2{
+    display: none;
+  }
+  #twt_2-btn{
+    display: none;
+  }
   div#twtr4 div.twtr_foot-svg {
     width: 95vw;
   }
@@ -850,7 +856,7 @@ span.aside_row3 {
 }
 @media only screen and (max-width: 376px) {
   div.container nav#nav div#nav_body {
-    width: 20vw;
+    width: 100vw;
   }
   div.container nav#nav div#nav_body ul {
     display: flex;
@@ -872,7 +878,7 @@ span.aside_row3 {
 }
 @media only screen and (max-width: 321px) {
   div.container nav#nav div#nav_body {
-    width: 20vw;
+    width: 100vw;
   }
   div.container nav#nav div#nav_body ul {
     display: flex;
