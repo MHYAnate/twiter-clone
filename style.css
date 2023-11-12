@@ -712,7 +712,7 @@ span.aside_row3 {
   div.container nav#nav {
     display: flex;
     width: 100vw;
-    transform: translateY(85vh);
+    transform: translateY(87vh);
     position: fixed;
     z-index: 3;
     background: #f7f9f9;
@@ -738,12 +738,14 @@ span.aside_row3 {
   div.container li.list {
     margin-left: -10px;
   }
+  div.container div#foot_btn{
+    display: none;
+  }
   div.container div#foot_btn button#nav_foot {
-    width: 170px;
-    margin-left: 29px;
+    display: none;
   }
   div.container div.nav_profile {
-    margin-left: 40px;
+
     display: none;
   }
   div.container main#main div#main-1 {
@@ -789,12 +791,7 @@ span.aside_row3 {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
-  #twt-pan-2{
-    display: none;
-  }
-  #twt_2-btn{
-    display: none;
-  }
+ 
   div#twtr4 div.twtr_foot-svg {
     width: 95vw;
   }
