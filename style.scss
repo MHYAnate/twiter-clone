@@ -2,7 +2,7 @@ body {
 	overflow-y: hidden;
 	overflow-x: hidden;
 }
-div#container {
+div.container {
 	background: white;
 	width: 100vw;
 	height: 100vh;
@@ -360,7 +360,7 @@ ul.foot-svg {
 	display: flex;
 	list-style-type: none;
 }
-div#container main#main header#main-2 {
+div.container main#main header#main-2 {
 	position: fixed;
 	width: 360px;
 	height: 50px;
@@ -391,7 +391,7 @@ div#container main#main header#main-2 {
 		color: #536471;
 	}
 }
-div#container main#main aside#aside aside#main-body {
+div.container main#main aside#aside aside#main-body {
 	margin-top: 70px;
 	height: max-content;
 	background: white;
@@ -453,7 +453,7 @@ aside#main-body ul.aside_ul li.aside_li div.aside_row1 div.trend {
 li.aside_li {
 	margin-bottom: 20px;
 }
-div#container main#main aside#aside ul#aside_ul2 {
+div.container main#main aside#aside ul#aside_ul2 {
 	display: grid;
 	grid-template-rows: auto;
 	background: #f7f9f9;
@@ -528,7 +528,7 @@ span.aside_row3 {
 	div#nav_body {
 		width: 20vw;
 	}
-	div#nav_profile {
+	div.nav_profile {
 		display: grid;
 		grid-template-columns: 1fr 5fr 1fr;
 		margin-top: 40px;
@@ -559,7 +559,7 @@ span.aside_row3 {
 			margin-left: 29px;
 		}
 	}
-	div#nav_profile {
+	div.nav_profile {
 		margin-left: 40px;
 	}
 	main#main {
@@ -608,12 +608,12 @@ div.twtr2 {
 div.twtr4{
 	width: 490px;
 }
-div#container main#main header#main-2 {
+div.container main#main header#main-2 {
 	input {
 		width: 180px;
 	}
 }
-div#container main#main aside#aside aside#main-body {
+div.container main#main aside#aside aside#main-body {
 	ul.aside_ul {
 		width: 230px;
 		ul.aside_ul li.aside_li {
@@ -624,7 +624,7 @@ div#container main#main aside#aside aside#main-body {
 div.aside_row1 {
 	width: 180px;
 }
-div#container main#main aside#aside ul#aside_ul2 {
+div.container main#main aside#aside ul#aside_ul2 {
 	width: 190px;
 	li {
 		div.in_li2-1 {
@@ -654,12 +654,12 @@ div.twtr_twt {
 
 }
 @media only screen and (max-width: 790px){
-  div#container {
+  div.container {
 		nav#nav {
 			display: none;
 		}
 		}
-		div#container main#main {
+		div.container main#main {
 			width: 770px;
 			div#main-1 {
 				width: 500px;
@@ -701,12 +701,12 @@ div.twtr_twt {
 	}
 
 	
-div#container main#main header#main-2 {
+div.container main#main header#main-2 {
 	input {
 		width: 180px;
 	}
 }
-div#container main#main aside#aside aside#main-body {
+div.container main#main aside#aside aside#main-body {
 	ul.aside_ul {
 		width: 230px;
 		ul.aside_ul li.aside_li {
@@ -717,7 +717,7 @@ div#container main#main aside#aside aside#main-body {
 div.aside_row1 {
 	width: 180px;
 }
-div#container main#main aside#aside ul#aside_ul2 {
+div.container main#main aside#aside ul#aside_ul2 {
 	width: 190px;
 	li {
 		div.in_li2-1 {
@@ -738,17 +738,14 @@ button.aside2 {
 		}
 }
 @media only screen and (max-width: 419px){
-  div#container {
-		width: 100vw;
-		margin-left: 0px;
+  div.container {
+		display: none;
 		nav#nav {
    display: none;
 			div#nav_body {
-				width: 100vw;
+				display: none;
         ul{
-          display: flex;
-          margin-left: -190px;
-          justify-content: space-between;
+          display: none;
           li{
             margin-left: -170px;
             span{
@@ -775,7 +772,7 @@ button.aside2 {
 				margin-left: 29px;
 			}
 		}
-		div#nav_profile {
+		div.nav_profile {
 			margin-left: 40px;
 			display: none;
 		}
@@ -844,12 +841,12 @@ button.aside2 {
 div.twtr2 {
 	width: 530px;
 }
-div#container main#main header#main-2 {
+div.container main#main header#main-2 {
 	input {
 		width: 180px;
 	}
 }
-div#container main#main aside#aside aside#main-body {
+div.container main#main aside#aside aside#main-body {
 	ul.aside_ul {
 		width: 230px;
 		ul.aside_ul li.aside_li {
@@ -860,7 +857,7 @@ div#container main#main aside#aside aside#main-body {
 div.aside_row1 {
 	width: 180px;
 }
-div#container main#main aside#aside ul#aside_ul2 {
+div.container main#main aside#aside ul#aside_ul2 {
 	width: 190px;
 	li {
 		div.in_li2-1 {
@@ -899,7 +896,7 @@ div.twtr4{
 }
 
 @media only screen and (max-width: 376px){
-  div#container {
+  div.container {
 		width: 100vw;
 			margin-left: 1px;
 		nav#nav {
@@ -928,17 +925,17 @@ div.twtr4{
 	.elon-svg{
 	   margin-left: 10px;
     }
-		div#nav_profile {
+		div.nav_profile {
 			margin-left: 40px;
 			display: none;
 		}
 	}
 	@media only screen and (max-width: 321px){
-		div#nav_profile {
+		div.nav_profile {
 			margin-left: 40px;
 			display: none;
 		}
-		div#container {
+		div.container {
 			width: 100vw;
 			margin-left: 0px;
 		
